@@ -68,7 +68,7 @@ img{
 } 
 
 h1{
-    padding-top: 10px;
+    padding-top: 40px;
     color: #fff;
     font-weight: 700;
 }
@@ -102,14 +102,23 @@ span{
     color: rgb(206, 153, 255);
 }
 .con{
-    padding: 10px 400px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:20px 0;
+} 
 
 .contact{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 400px;
     background-color: #534358;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 @keyframes move-left-right {
