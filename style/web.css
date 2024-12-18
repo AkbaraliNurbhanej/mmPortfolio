@@ -101,3 +101,42 @@ span{
 .div p:hover{
     color: rgb(206, 153, 255);
 }
+.con{
+    padding: 10px 400px;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #534358;
+}
+
+@keyframes move-left-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px); /* Move 50px to the right */
+  }
+  100% {
+    transform: translateX(-50px);
+    /*Backtotheoriginalposition*/
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+}
+
+}
+
+.contact button {
+    background-color: transparent;
+    color: #fff;
+    border-style: none;
+    animation: move-left-right 2s infinite; /* Apply the animation */
+}
+
+a{
+    text-decoration: none;
+}
