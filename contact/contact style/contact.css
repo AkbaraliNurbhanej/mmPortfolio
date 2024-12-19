@@ -1,0 +1,113 @@
+#lait img{
+    height:150px;
+}
+
+#pro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pro p{
+    color: #fff;
+}
+
+
+
+
+
+
+
+#messages-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0;
+  }
+  
+  #messages  .topic{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding:20px;
+    width: 250px;
+    height: 250px;
+    background-color: #1c1f2b;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+  
+  @property --angle{
+    syntax:"<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  #messages .topic::after,
+  #messages .topic::before{
+    border-radius: 50%;
+    content: "";
+    height: 103%;
+    width: 103%;
+    position: absolute;
+    background-image: conic-gradient(from var(--angle), transparent 50%,rgb(249, 96, 249));
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-animation: 3s spin linear infinite;
+}
+  
+  #messages .topic::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+    -webkit-filter: blur(1.5rem);
+  }
+  
+  @keyframes spin{
+    from{
+      --angle:0deg;
+    }
+    to{
+      --angle:360deg;
+    }
+  }
+  #messages i{
+  font-size: 40px;
+  padding-bottom: 20px;
+  color: #c068f3;
+  } 
+  
+  #messages h3{
+    padding-bottom: 20px;
+  }
+  
+  #messages a{
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #c068f3;
+    padding:5px 0;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+  } 
+  
+  #messages a:hover{
+    background-color: #8da2fb1a;
+    color: #c068f3;
+  }
