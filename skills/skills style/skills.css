@@ -33,6 +33,10 @@ img{
     -o-border-radius: 10px;
 }
 
+#education:hover{
+    border: 5px solid #ce68ed;
+}
+
 
 #lait img{
     height:150px;
