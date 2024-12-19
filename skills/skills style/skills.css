@@ -67,3 +67,7 @@ img{
     padding-top: 10px;
     font-size: 100px;
 }
+.fex-box:hover i,
+.fex-box:hover h1{
+color: #ce68ed;;
+}
