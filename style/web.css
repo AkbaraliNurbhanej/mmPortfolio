@@ -7,14 +7,24 @@ body.dark-mode a{
     color: #000 !important;
 }
 body.dark-mode p{
-    color: #000 !important;
+    color: #000;
 }
 body.dark-mode h1,
-body.dark-mode h4{
+body.dark-mode h4,
+body.dark-mode h3{
     color: #000 !important; 
 }
 body.dark-mode i{
     color: #000 !important; 
+}
+body.dark-mode #header{
+    border-bottom:1px solid #000 !important; 
+}
+body.dark-mode #img .p1{
+    display: none; 
+}
+body.dark-mode #img .p2{
+    display: inline; 
 }
 
 
@@ -37,7 +47,15 @@ background-color: #fff;
 body.dark-mode #mediya .fex-box a:hover{
 color:#fff !important;
 }
+body.dark-mode .topic i,
+body.dark-mode .topic a, 
+body.dark-mode .topic h3 {
+    color: #000 !important;
+}
 
+marquee{
+    background-color: transparent;
+}
 
 
 #header{
@@ -110,6 +128,9 @@ position: relative;
 
 #close{
     display: none;
+}
+#img .p2{
+    display: none; 
 }
 
 /* #mobile{

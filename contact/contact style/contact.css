@@ -1,3 +1,17 @@
+body.dark-mode #lait .p1{
+  display: none;
+}
+
+body.dark-mode #lait .p2{
+  display: inline;
+}
+
+
+.p2{
+  display: none;
+}
+
+
 #lait img{
     height:150px;
 }
@@ -33,7 +47,7 @@
     padding:20px;
     width: 230px;
     height: 230px;
-    background-color: #1c1f2b;
+    background-color: transparent;
     text-align: center;
     position: relative;
     border-radius: 50%;
@@ -109,5 +123,5 @@
   
   #messages a:hover{
     background-color: #8da2fb1a;
-    color: #c068f3;
+    color: #000;
   }

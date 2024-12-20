@@ -1,3 +1,35 @@
+body.dark-mode .fex-box{
+    border: 1px solid #000;
+}
+body.dark-mode .fex-box:hover{
+    border: 5px solid #000;
+}
+body.dark-mode .fex-box:hover i,
+body.dark-mode .fex-box:hover h1{
+    color: #ce68ed !important;
+}
+
+body.dark-mode #lait .p1{
+    display: none;
+}
+
+body.dark-mode #lait .p2{
+    display: inline;
+}
+
+
+
+body.dark-mode #education{
+    border: 1px solid #000;
+}
+body.dark-mode #education:hover{
+
+    border: 5px solid #ce68ed;
+}
+body.dark-mode #education .p:hover{
+color: #ce68ed;
+}
+
 p,i{
     font-size: 30px;
     color: #fff;
@@ -74,4 +106,8 @@ img{
 .fex-box:hover i,
 .fex-box:hover h1{
 color: #ce68ed;;
+}
+
+.p2{
+    display: none;
 }
