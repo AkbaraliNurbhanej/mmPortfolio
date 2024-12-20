@@ -17,7 +17,13 @@ body.dark-mode #lait .p2{
     display: inline;
 }
 
-
+body.dark-mode #messages  .topic:hover{
+    background-color: #fff;
+}
+body.dark-mode #messages  .topic:hover i,
+body.dark-mode #messages  .topic:hover h1{
+    color: #8e13d6 !important;
+}
 
 body.dark-mode #education{
     border: 1px solid #000;
@@ -111,3 +117,90 @@ color: #ce68ed;;
 .p2{
     display: none;
 }
+
+
+
+
+#messages-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0;
+  }
+  
+  #messages  .topic{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding:20px;
+    width: 230px;
+    height: 230px;
+    background-color:transparent;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#messages  .topic:hover{
+    background-color: #060505;
+}
+#messages  .topic:hover i,
+#messages  .topic:hover h1{
+    color: #8e13d6 !important;
+}
+  
+  @property --angle{
+    syntax:"<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  #messages .topic::after,
+  #messages .topic::before{
+    border-radius: 10px;
+    content: "";
+    height: 103%;
+    width: 103%;
+    position: absolute;
+    background-image: conic-gradient(from var(--angle), transparent 90%,rgb(249, 96, 249));
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-animation: 3s spin linear infinite;
+}
+  
+  #messages .topic::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+    -webkit-filter: blur(1.5rem);
+  }
+  
+  @keyframes spin{
+    from{
+      --angle:0deg;
+    }
+    to{
+      --angle:360deg;
+    }
+  }
+  #messages i{
+  font-size: 40px;
+  padding-bottom: 20px;
+  color: #c068f3;
+  } 
+  
+  #messages h1{
+    padding-bottom: 20px;
+  }
+  
