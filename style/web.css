@@ -1,3 +1,200 @@
+body.dark-mode {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+body.dark-mode a{
+    color: #000 !important;
+}
+body.dark-mode p{
+    color: #000 !important;
+}
+body.dark-mode h1,
+body.dark-mode h4{
+    color: #000 !important; 
+}
+body.dark-mode i{
+    color: #000 !important; 
+}
+
+
+body.dark-mode #poject .porject-detail:hover{
+background-color: aliceblue;
+}
+body.dark-mode #poject .img i{
+    color: #cc7ede !important;
+}
+body.dark-mode #poject .img :hover{
+    background-color:rgb(202, 225, 246) !important;
+}
+
+body.dark-mode #footer address{
+color: gray;
+}
+body.dark-mode #mediya .fex-box{
+background-color: #fff;
+}
+body.dark-mode #mediya .fex-box a:hover{
+color:#fff !important;
+}
+
+
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding:20px 0 10px 0;
+    border-bottom: 1px solid #fff;
+}
+
+#header img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header li{
+padding-left: 30px;
+list-style: none ;
+position: relative;
+}
+
+
+#header li a{
+    text-decoration: none;
+    font-size: 20PX ;
+    font-weight: 600;
+    color: #fff;;
+}
+
+#header li i{
+    text-decoration: none;
+    font-size: 20PX ;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+#header li a:hover,
+#header li a.active{
+    color: #cc7ede;
+}
+
+#header li a.active::after,
+#header li a:hover::after{ 
+    content:"" ;
+    width: 70%;
+    height: 2px;
+    background-color: #cc7ede;
+    position: absolute;
+    bottom: -4px;
+    left: 30px;
+}
+
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+
+/* #mobile{
+    font-size: 25px;
+    display: flex;
+} */
+
+/* ine the keyframes for the bounce animation */ 
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-150px);
+    }
+    60% {
+        transform: translateY(-75px);
+    }
+}
+
+
+@media (max-width:799px) {
+
+    #name h1{
+        font-size: 85px;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0%;
+        right:-310px ;
+        height: 50vh;
+        width: 300px;
+        background-color:#3933338c ;
+        box-shadow: 0 40px 60px rgba(246, 246, 246, 0.1);
+        padding: 80px 0 0 10px;
+        transition:0.3s ease ;
+        -webkit-transition:0.3s ease ;
+        -moz-transition:0.3s ease ;
+        -ms-transition:0.3s ease ;
+        -o-transition:0.3s ease ;
+}
+
+    #navbar.active {
+        right:0px;
+    }
+
+    #header li {
+    margin-bottom: 25px;
+    }
+
+    #mobile{
+        font-size: 25px;
+        display: flex;
+    }
+
+    #themeToggle{
+        font-size: 24px;
+    }
+    #bar{
+        padding-left: 20px;
+        font-size: 24px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #fff;
+        font-size: 24px;
+    }
+
+}
+
+
+
+
+
+
+
 *{
     padding: 0%;
     margin: 0%;
