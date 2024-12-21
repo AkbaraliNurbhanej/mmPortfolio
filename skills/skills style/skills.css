@@ -130,13 +130,14 @@ color: #ce68ed;;
   }
   
   #messages  .topic{
+    overflow:hidden;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     padding:20px;
     width: 230px;
     height: 230px;
-    background-color:transparent;
+    background-color:#000;
     text-align: center;
     position: relative;
     border-radius: 10px;
@@ -145,15 +146,47 @@ color: #ce68ed;;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-#messages  .topic:hover{
+
+/* #messages  .topic:hover{
     background-color: #060505;
+} */
+
+#messages .topic:hover p{
+    display: inline;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    background-color:rgba(192, 109, 247, .7);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
+
+#messages .topic p{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    font-weight: 800;
+    display: none;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
 #messages  .topic:hover i,
 #messages  .topic:hover h1{
     color: #8e13d6 !important;
 }
-  
-  @property --angle{
+
+@property --angle{
     syntax:"<angle>";
     initial-value: 0deg;
     inherits: false;
