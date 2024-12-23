@@ -44,7 +44,10 @@ body.dark-mode  #messages  .topic{
     padding-left: 90px;
 }
 #lait .pimg {
- margin-top: -12PX;
+height: 150px;
+width: 60px;
+margin-top: -12PX;
+margin-left: 46px;
 }
 #lait img {
     cursor: pointer;
