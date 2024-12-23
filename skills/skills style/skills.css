@@ -39,6 +39,21 @@ body.dark-mode  #messages  .topic{
     background-color: #fff;
 }
 
+#lait{
+    display: flex;
+    padding-left: 90px;
+}
+#lait .pimg {
+ margin-top: -12PX;
+}
+#lait img {
+    cursor: pointer;
+    width: 150px; /* Adjust size */
+    height: auto;
+}
+
+
+
 p,i{
     font-size: 30px;
     color: #fff;
