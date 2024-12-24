@@ -167,7 +167,7 @@ position: relative;
         position: fixed;
         top: 0%;
         right:-310px ;
-        height: 50vh;
+        height: auto;
         width: 300px;
         background-color:#b700ff ;
         box-shadow: 0 40px 60px rgba(246, 246, 246, 0.1);
