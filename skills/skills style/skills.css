@@ -253,3 +253,12 @@ color: #ce68ed;;
     padding-bottom: 20px;
   }
   
+
+/* img round hover  */
+#rotatingImage {
+    transition: transform 1s ease-in-out; /* Smooth animation */
+}
+
+#rotatingImage:hover {
+    transform: rotate(360deg); /* Rotate 360 degrees on hover */
+}

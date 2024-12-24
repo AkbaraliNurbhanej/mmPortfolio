@@ -125,3 +125,13 @@ body.dark-mode #lait .p2{
     background-color: #8da2fb1a;
     color: #000;
   }
+
+  
+/* img round hover  */
+#rotatingImage {
+  transition: transform 1s ease-in-out; /* Smooth animation */
+}
+
+#rotatingImage:hover {
+  transform: rotate(360deg); /* Rotate 360 degrees on hover */
+}
